@@ -8,11 +8,21 @@ I'm interested in building intelligent systems, computer vision applications, an
 
 <br>
 
-<a href="https://github.com/tusharsingh3199">GitHub</a>
-  ·   <a href="https://www.linkedin.com/in/tushar-singh-97526a379/">LinkedIn</a>
-  ·   <a href="https://www.kaggle.com/tusharsingh3199">Kaggle</a>
-  ·   <a href="https://leetcode.com/tusharsingh3199">LeetCode</a>
-  ·   <a href="https://youtube.com/@tusharsingh3282">YouTube</a>
+<a href="https://github.com/tusharsingh3199">
+  <img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+<a href="https://www.linkedin.com/in/tushar-singh-97526a379/">
+  <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+<a href="https://www.kaggle.com/tusharsingh3199">
+  <img src="https://img.shields.io/badge/-Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" />
+</a>
+<a href="https://leetcode.com/tusharsingh3199">
+  <img src="https://img.shields.io/badge/-LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" />
+</a>
+<a href="https://youtube.com/@tusharsingh3282">
+  <img src="https://img.shields.io/badge/-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
+</a>
 
 </div>
 
@@ -34,6 +44,9 @@ I'm interested in building intelligent systems, computer vision applications, an
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square\&logo=tensorflow\&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square\&logo=scikit-learn\&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square\&logo=opencv\&logoColor=white)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=flat-square\&logo=google\&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square\&logo=numpy\&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square\&logo=pandas\&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square\&logo=langchain\&logoColor=white)
 
 **Web Development**
@@ -47,7 +60,6 @@ I'm interested in building intelligent systems, computer vision applications, an
 **Game Development**
 
 ![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-0E1128?style=flat-square\&logo=unrealengine\&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square\&logo=c%2B%2B\&logoColor=white)
 ![Blueprints](https://img.shields.io/badge/Blueprints-1B1F23?style=flat-square)
 
 **Databases**
@@ -62,3 +74,5 @@ I'm interested in building intelligent systems, computer vision applications, an
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square\&logo=github\&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square\&logo=linux\&logoColor=black)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square\&logo=gnu-bash\&logoColor=white)
+
+</div>
