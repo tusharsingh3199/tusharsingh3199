@@ -1,7 +1,8 @@
 <div align="center">
+ 
 # Hi, I'm Tushar Kumar Singh 
+
  Game Dev &nbsp;•&nbsp;  Web Dev &nbsp;•&nbsp;  AI / ML &nbsp;•&nbsp;  DevOps
-B.Tech in Artificial Intelligence & Machine Learning, GGSIPU, Delhi
 </div>
 
 <br>
