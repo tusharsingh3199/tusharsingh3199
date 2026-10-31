@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 48" width="900" height="48" role="img" aria-label="05 // TRAPAR WAVE">
+  <defs>
+    <linearGradient id="a" x1="0" x2="1"><stop offset="0" stop-color="#2a8cf0" stop-opacity="0"/><stop offset="1" stop-color="#2a8cf0"/></linearGradient>
+    <linearGradient id="b" x1="0" x2="1"><stop offset="0" stop-color="#2a8cf0"/><stop offset="1" stop-color="#2a8cf0" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect x="20" y="23.25" width="264" height="1.5" fill="url(#a)"/>
+  <rect x="616" y="23.25" width="264" height="1.5" fill="url(#b)"/>
+  <circle r="2.5" cy="24" fill="#8fe9ff"><animate attributeName="cx" values="20;284;20" dur="4.5s" repeatCount="indefinite"/></circle>
+  <circle r="2.5" cy="24" fill="#8fe9ff"><animate attributeName="cx" values="880;616;880" dur="4.5s" repeatCount="indefinite"/></circle>
+  <rect x="281" y="21" width="6" height="6" fill="#2a8cf0" transform="rotate(45 284 24)"><animate attributeName="opacity" values="1;0.25;1" dur="3s" repeatCount="indefinite"/></rect>
+  <rect x="613" y="21" width="6" height="6" fill="#2a8cf0" transform="rotate(45 616 24)"><animate attributeName="opacity" values="0.25;1;0.25" dur="3s" repeatCount="indefinite"/></rect>
+  <text x="450" y="29" text-anchor="middle" font-family="'Courier New', monospace" font-size="15" font-weight="700" letter-spacing="7" fill="#2a8cf0">05 // TRAPAR WAVE</text>
+</svg>
