@@ -1,10 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" width="100%" alt="Tushar Kumar Singh - AI/ML, Computer Vision, Game Dev, Web Dev, DevOps"/>
-
-<a href="https://github.com/tusharsingh3199">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=21&duration=3200&pause=900&color=8FE9FF&center=true&vCenter=true&width=760&height=50&lines=AI%2FML+Engineer+in+the+making;Computer+Vision+Enthusiast;Unreal+Engine+Game+Developer;Web+%7C+DevOps+Explorer" alt="Typing animation"/>
-</a>
+<img src="assets/banner.svg" width="100%" alt="Tushar Kumar Singh - AI/ML Engineer, Computer Vision Developer, Web Developer, DevOps Engineer, Game Developer"/>
 
 <br/>
 
@@ -20,27 +16,38 @@
 </div>
 
 <p align="center">
-Hi, I'm <b>Tushar</b>, a B.Tech student in Artificial Intelligence and Machine Learning at GGSIPU (EDC), Delhi.<br/>
-I like building things that <b>see</b>, <b>think</b>, and <b>play</b>.
+Hi, I'm <b>Tushar</b>, a B.Tech student in AI &amp; ML at GGSIPU (EDC), Delhi, and the lead of <b>i7</b>, the IoSC crew that builds AI/ML and game projects.<br/>
+Every Gekkostate needs a pilot who can ride the wave, and I like to think I'm learning to be one: I build things that <b>see</b>, <b>think</b> and <b>play</b>.
 </p>
 
 <p align="center">
-<b>AI / ML</b> &nbsp;·&nbsp; <b>Computer Vision</b> &nbsp;·&nbsp; <b>Game Development</b> &nbsp;·&nbsp; <b>Web Development</b> &nbsp;·&nbsp; <b>DevOps</b>
+My trapar waves are data. I segment brain tumors in 3D MRI (<b>0.85 Whole Tumor Dice</b>), build a weather-forecasting and disaster-support platform for India, and teach LLM agents to play games, from FrozenLake all the way up to Pok&eacute;mon.<br/>
+My LFOs have wings. <b>Eureka Horizon</b> is a solo-built Unreal Engine 5 vehicle chase across 8 levels, with cars, boats, drones, planes and trains, and <b>Infinity Action</b> is an action RPG released on Google Play.
 </p>
 
+<p align="center">
+<i>Top 10 out of 2,000+ teams at Fintechstico (NSUT) &nbsp;·&nbsp; Open to internships in AI/ML, computer vision and game dev.</i>
+</p>
 
 ```bash
 pilot@gekkostate:~$ whoami
 Tushar Kumar Singh
 
 pilot@gekkostate:~$ cat pilot.id
-FOCUS     Computer Vision · Game Dev · Physics · Web · DevOps
+CALLSIGN   tusharsingh3199
+BASE       Delhi, India (28.6N 77.2E)
+ACADEMY    GGSIPU (EDC) · B.Tech AI & ML · 2025 - 2029
+CREW       i7 Lead · IoSC GGSIPU-EDC
+FOCUS      AI/ML · Computer Vision · Web · DevOps · Game Dev
 
 pilot@gekkostate:~$ ./ride_the_wave --boot
-[ OK ] neural engines ....... PyTorch · TensorFlow · OpenCV
-[ OK ] game core ............ Unreal Engine · C++ · Blueprints
-[ OK ] web systems .......... React · Node · Django · FastAPI
-[ OK ] deploy bay ........... Docker · Kubernetes · AWS · GitHub Actions
+[ OK ] languages ............ Python · C/C++ · Java · JavaScript · TypeScript · SQL · Bash
+[ OK ] neural engines ....... PyTorch · TensorFlow/Keras · Scikit-learn · OpenCV · MediaPipe
+[ OK ] ai systems ........... Deep Learning · Computer Vision · NLP · LLM Agents · RAG · LangChain
+[ OK ] game core ............ Unreal Engine 5 · C++ · Blueprints · Behavior Trees · EQS · Niagara
+[ OK ] web systems .......... React · Node.js · Express · Django · FastAPI
+[ OK ] data banks ........... PostgreSQL · MySQL · MongoDB
+[ OK ] deploy bay ........... Docker · Kubernetes · AWS · GitHub Actions · Linux · Git
 [ OK ] compac drive ......... ENGAGED
 ```
 
