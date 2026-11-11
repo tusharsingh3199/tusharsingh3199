@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" width="100%" alt="Tushar Kumar Singh - AI/ML Engineer, Computer Vision Developer, Web Developer, DevOps Engineer, Game Developer"/>
+<img src="assets/banner.svg" width="100%" alt="Tushar Kumar Singh - AI/ML Engineer, Web Dev & DevOps Engineer, Game Developer"/>
 
 <br/>
 
@@ -16,39 +16,21 @@
 </div>
 
 <p align="center">
-Hi, I'm <b>Tushar</b>, a B.Tech student in AI &amp; ML at GGSIPU (EDC), Delhi, and the lead of <b>i7</b>, the IoSC crew that builds AI/ML and game projects.<br/>
-Every Gekkostate needs a pilot who can ride the wave, and I like to think I'm learning to be one: I build things that <b>see</b>, <b>think</b> and <b>play</b>.
-</p>
-
-<p align="center">
-My trapar waves are data. I segment brain tumors in 3D MRI (<b>0.85 Whole Tumor Dice</b>), build a weather-forecasting and disaster-support platform for India, and teach LLM agents to play games, from FrozenLake all the way up to Pok&eacute;mon.<br/>
-My LFOs have wings. <b>Eureka Horizon</b> is a solo-built Unreal Engine 5 vehicle chase across 8 levels, with cars, boats, drones, planes and trains, and <b>Infinity Action</b> is an action RPG released on Google Play.
-</p>
-
-<p align="center">
-<i>Top 10 out of 2,000+ teams at Fintechstico (NSUT) &nbsp;·&nbsp; Open to internships in AI/ML, computer vision and game dev.</i>
+Hi, I'm <b>Tushar Kumar Singh</b>, a pilot riding the wave between <b>AI/ML</b>, <b>Computer Vision</b>, <b>Web</b>, <b>DevOps</b> and <b>Game Dev</b>.<br/>
+I like building things that <b>see</b>, <b>think</b> and <b>play</b>, and I never miss a chance to talk about <b>Eureka Seven</b>.
 </p>
 
 ```bash
-pilot@gekkostate:~$ whoami
-Tushar Kumar Singh
+user@github:~$ whoami
+Tushar Singh
 
-pilot@gekkostate:~$ cat pilot.id
-CALLSIGN   tusharsingh3199
-BASE       Delhi, India (28.6N 77.2E)
-ACADEMY    GGSIPU (EDC) · B.Tech AI & ML · 2025 - 2029
-CREW       i7 Lead · IoSC GGSIPU-EDC
-FOCUS      AI/ML · Computer Vision · Web · DevOps · Game Dev
-
-pilot@gekkostate:~$ ./ride_the_wave --boot
-[ OK ] languages ............ Python · C/C++ · Java · JavaScript · TypeScript · SQL · Bash
-[ OK ] neural engines ....... PyTorch · TensorFlow/Keras · Scikit-learn · OpenCV · MediaPipe
-[ OK ] ai systems ........... Deep Learning · Computer Vision · NLP · LLM Agents · RAG · LangChain
-[ OK ] game core ............ Unreal Engine 5 · C++ · Blueprints · Behavior Trees · EQS · Niagara
-[ OK ] web systems .......... React · Node.js · Express · Django · FastAPI
-[ OK ] data banks ........... PostgreSQL · MySQL · MongoDB
-[ OK ] deploy bay ........... Docker · Kubernetes · AWS · GitHub Actions · Linux · Git
-[ OK ] compac drive ......... ENGAGED
+user@github:~$ cat tech_stack.txt
+Languages   Python · C/C++ · Java · JavaScript · TypeScript · SQL · Bash
+AI/ML       PyTorch · TensorFlow · Scikit-learn · OpenCV · MediaPipe · LangChain
+Game Dev    Unreal Engine · C++ · Blueprints
+Web         React · Node.js · Express · Django · FastAPI
+Databases   PostgreSQL · MySQL · MongoDB
+DevOps      Docker · Kubernetes · AWS · GitHub Actions · Linux · Git
 ```
 
 <div align="center">
