@@ -25,12 +25,11 @@ user@github:~$ whoami
 Tushar Singh
 
 user@github:~$ cat tech_stack.txt
-Languages   Python · C/C++ · Java · JavaScript · TypeScript · SQL · Bash
-AI/ML       PyTorch · TensorFlow · Scikit-learn · OpenCV · MediaPipe · LangChain
-Game Dev    Unreal Engine · C++ · Blueprints
-Web         React · Node.js · Express · Django · FastAPI
-Databases   PostgreSQL · MySQL · MongoDB
-DevOps      Docker · Kubernetes · AWS · GitHub Actions · Linux · Git
+Languages          Python · C/C++ · Java · JavaScript · TypeScript · SQL · Bash
+AI/ML              PyTorch · TensorFlow · Scikit-learn · OpenCV · MediaPipe · LangChain
+Game Dev           Unreal Engine · C++ · Blueprints
+Web & Databases    React · Node.js · Express · Django · Fast API · PostgreSQL · MySQL · MongoDB
+DevOps             Docker · Kubernetes · AWS · GitHub Actions · Linux · Git
 ```
 
 <div align="center">
