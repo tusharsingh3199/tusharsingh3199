@@ -16,7 +16,7 @@
 </div>
 
 <p align="center">
-Hi, I'm <b>Tushar Singh</b>, a pilot riding the wave between <b>AI/ML</b>, <b>Computer Vision</b>, <b>Web</b>, <b>DevOps</b> and <b>Game Dev</b>.<br/>
+Hi, I'm <b>Tushar Singh</b>, a pilot riding the wave between <b>AI/ML</b>, <b>Web & DevOps</b> and <b>Game Dev</b>.<br/>
 I like building things that <b>see</b>, <b>think</b> and <b>play</b>, and I never miss a chance to talk about <b>Eureka Seven</b>.
 </p>
 
