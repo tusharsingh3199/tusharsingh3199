@@ -188,7 +188,7 @@ def banner(uri):
     <rect width="{BW}" height="{BH}" fill="url(#floor)"/>
     {particles(34, BW, 120, BH - 30, 7)}
 
-    <text x="66" y="86" {MONO} font-size="12.5" letter-spacing="5.5" fill="#dff6ff" filter="url(#shadow)">GEKKOSTATE  ·  DELHI, INDIA</text>
+    <text x="66" y="86" {MONO} font-size="12.5" letter-spacing="5.5" fill="#dff6ff" filter="url(#shadow)">DELHI, INDIA</text>
     <g filter="url(#shadow)" {SANS} font-size="64" font-weight="300" letter-spacing="11" fill="#fff">
       <text x="62" y="160">{NAME_1}</text>
       <text x="62" y="228">{NAME_2}</text>
