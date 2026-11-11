@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" width="100%" alt="Tushar Kumar Singh - AI/ML Engineer, Web Dev & DevOps Engineer, Game Developer"/>
+<img src="assets/banner.svg" width="100%" alt="Tushar Singh - AI/ML Engineer, Web Dev & DevOps Engineer, Game Developer"/>
 
 <br/>
 
