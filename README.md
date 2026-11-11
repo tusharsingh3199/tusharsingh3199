@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg?v=4" width="100%" alt="Tushar Singh - AI/ML Engineer, Web Dev & DevOps Engineer, Game Developer"/>
+<img src="assets/banner.svg?v=5" width="100%" alt="Tushar Singh - AI/ML Engineer, Web Dev & DevOps Engineer, Game Developer"/>
 
 <br/>
 
@@ -11,7 +11,7 @@
 <a href="https://leetcode.com/tusharsingh3199"><img src="https://img.shields.io/badge/LeetCode-0a2c74?style=for-the-badge&logo=leetcode&logoColor=8fe9ff" alt="LeetCode"/></a>
 <a href="https://youtube.com/@tusharsingh3282"><img src="https://img.shields.io/badge/YouTube-0a2c74?style=for-the-badge&logo=youtube&logoColor=8fe9ff" alt="YouTube"/></a>
 
-<img src="assets/h-profile.svg?v=4" width="760" alt="01 Pilot Profile"/>
+<img src="assets/h-profile.svg?v=5" width="760" alt="01 Pilot Profile"/>
 
 </div>
 
@@ -34,7 +34,7 @@ DevOps             Docker · Kubernetes · AWS · GitHub Actions · Linux · Git
 
 <div align="center">
 
-<img src="assets/h-stack.svg?v=4" width="760" alt="02 Compac Drive"/>
+<img src="assets/h-stack.svg?v=5" width="760" alt="02 Compac Drive"/>
 
 <img src="https://skillicons.dev/icons?i=c,cpp,py,java,js,html,css,pytorch,tensorflow,sklearn,opencv,numpy,pandas,react,nodejs,express,django,fastapi,unreal,mysql,postgres,mongodb,docker,aws,githubactions,kubernetes,linux,git,github,bash&perline=15&theme=dark" alt="Tech stack"/>
 
@@ -43,6 +43,6 @@ DevOps             Docker · Kubernetes · AWS · GitHub Actions · Linux · Git
 </div>
 
 <div align="center">
-<img src="assets/footer.svg?v=4" width="100%" alt="Ride the wave. Build the sky."/>
+<img src="assets/footer.svg?v=5" width="100%" alt="Ride the wave. Build the sky."/>
 <img src="https://komarev.com/ghpvc/?username=tusharsingh3199&color=2b8ef0&style=flat-square&label=PILOT+VISITS" alt="Profile views"/>
 </div>
