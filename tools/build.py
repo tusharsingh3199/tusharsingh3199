@@ -21,8 +21,8 @@ ASSETS = ROOT / "assets"
 SOURCE = ASSETS / "eureka.png"
 
 # Banner / footer canvas sizes (SVG user units; the README scales them to 100% width).
-BW, BH = 1280, 400
-FW, FH = 1280, 180
+BW, BH = 1280, 500
+FW, FH = 1280, 280
 TAB = 16  # footer dock: the visit counter sits right under this tab
 
 NAME_1, NAME_2 = "TUSHAR", "SINGH"
