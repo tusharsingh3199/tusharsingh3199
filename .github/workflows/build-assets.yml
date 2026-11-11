@@ -1,0 +1,51 @@
+name: Build assets
+
+# Runs when the artwork source changes (not when the generated SVGs change, so it can't loop).
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/build.py"
+      - "assets/eureka.png"
+  workflow_dispatch: # also lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-assets
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pillow
+
+      - name: Build SVGs
+        run: python tools/build.py
+
+      - name: Refresh image cache in README
+        run: |
+          # Adds or updates ?v=<run number> on every generated SVG so GitHub and browsers fetch the new files.
+          sed -i -E 's#(assets/(banner|footer|h-profile|h-stack)\.svg)(\?v=[0-9]+)?#\1?v=${{ github.run_number }}#g' README.md
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A assets README.md
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+          else
+            git commit -m "chore: rebuild assets [skip ci]"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push
+          fi
