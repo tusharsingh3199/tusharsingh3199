@@ -9,6 +9,7 @@ Writes assets/banner.svg, assets/footer.svg, assets/h-profile.svg, assets/h-stac
 The artwork is embedded inside each SVG because GitHub does not let an SVG load other files.
 """
 import base64
+import html
 import io
 import random
 from pathlib import Path
@@ -20,19 +21,18 @@ ASSETS = ROOT / "assets"
 SOURCE = ASSETS / "eureka.png"
 
 # Banner / footer canvas sizes (SVG user units; the README scales them to 100% width).
-BW, BH = 1280, 580
-FW, FH = 1280, 340
+BW, BH = 1280, 500
+FW, FH = 1280, 280
 TAB = 16  # footer dock: the visit counter sits right under this tab
 
-NAME_1, NAME_2 = "TUSHAR", "KUMAR SINGH"
+NAME_1, NAME_2 = "TUSHAR", "SINGH"
 ROLES = [
-    "AI / ML ENGINEER",
-    "COMPUTER VISION DEVELOPER",
-    "WEB DEVELOPER",
-    "DEVOPS ENGINEER",
+    "AI/ML ENGINEER",
+    "WEB DEV & DEVOPS ENGINEER",
     "GAME DEVELOPER",
 ]
-SECONDS_PER_ROLE = 3.4
+ALT = "Tushar Singh - AI/ML Engineer, Web Dev & DevOps Engineer, Game Developer"
+SECONDS_PER_ROLE = 3.6
 
 HEADINGS = [("profile", "01 // PILOT PROFILE"), ("stack", "02 // COMPAC DRIVE")]
 
@@ -43,11 +43,11 @@ MONO = "font-family=\"'Courier New',monospace\""
 # ------------------------------------------------------------------ image helpers
 def remove_title(img):
     """Paint out the 'Eureka Seven' lettering baked into the top-left sky."""
-    box = (25, 30, 530, 185)
+    box = (0, 0, 548, 215)
     region = img.crop(box)
-    smooth = region.filter(ImageFilter.MedianFilter(11)).filter(ImageFilter.GaussianBlur(3))
+    smooth = region.filter(ImageFilter.MedianFilter(15)).filter(ImageFilter.MedianFilter(15)).filter(ImageFilter.GaussianBlur(9))
     mask = Image.new("L", region.size, 0)
-    ImageDraw.Draw(mask).rectangle((12, 12, region.width - 12, region.height - 12), fill=255)
+    ImageDraw.Draw(mask).rectangle((-30, -30, region.width - 14, region.height - 14), fill=255)
     out = img.copy()
     out.paste(smooth, box[:2], mask.filter(ImageFilter.GaussianBlur(8)))
     return out
@@ -141,7 +141,7 @@ def role_slideshow(x, y, dots_y):
             f'<g opacity="0" filter="url(#shadow)">'
             f'<animate attributeName="opacity" values="{ops}" keyTimes="{kt}" dur="{dur}" repeatCount="indefinite"/>'
             f'<animateTransform attributeName="transform" type="translate" values="{dys}" keyTimes="{kt}" dur="{dur}" repeatCount="indefinite"/>'
-            f'<text x="{x}" y="{y}" {SANS} font-size="29" letter-spacing="7" fill="#fff">{role}</text></g>'
+            f'<text x="{x}" y="{y}" {SANS} font-size="29" letter-spacing="7" fill="#fff">{html.escape(role)}</text></g>'
         )
     for i in range(n):
         k = _keyframes(i, n)
@@ -170,7 +170,7 @@ def drift_image(uri, w, h, zoom=0.045, dur=46):
 
 # ------------------------------------------------------------------ the artwork
 def banner(uri):
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {BW} {BH}" width="{BW}" height="{BH}" role="img" aria-label="Tushar Kumar Singh - AI/ML Engineer, Computer Vision Developer, Web Developer, DevOps Engineer, Game Developer">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {BW} {BH}" width="{BW}" height="{BH}" role="img" aria-label="{html.escape(ALT)}">
   <defs>{DEFS}
     <linearGradient id="leftshade" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#04163f" stop-opacity="0.55"/><stop offset="0.38" stop-color="#06205a" stop-opacity="0.28"/>
@@ -188,14 +188,14 @@ def banner(uri):
     <rect width="{BW}" height="{BH}" fill="url(#floor)"/>
     {particles(34, BW, 120, BH - 30, 7)}
 
-    <text x="66" y="92" {MONO} font-size="12.5" letter-spacing="5.5" fill="#dff6ff" filter="url(#shadow)">GEKKOSTATE  ·  DELHI, INDIA</text>
+    <text x="66" y="86" {MONO} font-size="12.5" letter-spacing="5.5" fill="#dff6ff" filter="url(#shadow)">GEKKOSTATE  ·  DELHI, INDIA</text>
     <g filter="url(#shadow)" {SANS} font-size="64" font-weight="300" letter-spacing="11" fill="#fff">
-      <text x="62" y="176">{NAME_1}</text>
-      <text x="62" y="248">{NAME_2}</text>
+      <text x="62" y="160">{NAME_1}</text>
+      <text x="62" y="228">{NAME_2}</text>
     </g>
-    <rect x="66" y="274" width="330" height="1.6" rx="0.8" fill="#fff" fill-opacity="0.75"/>
-    <rect x="66" y="271" width="48" height="7.4" rx="3.7" fill="#8fe9ff"/>
-    {role_slideshow(66, 326, 362)}
+    <rect x="66" y="252" width="330" height="1.6" rx="0.8" fill="#fff" fill-opacity="0.75"/>
+    <rect x="66" y="249" width="48" height="7.4" rx="3.7" fill="#8fe9ff"/>
+    {role_slideshow(66, 302, 336)}
   </g>
   <rect x="0.75" y="0.75" width="{BW - 1.5}" height="{BH - 1.5}" rx="15.5" fill="none" stroke="#fff" stroke-opacity="0.4"/>
 </svg>
@@ -220,11 +220,11 @@ def footer(uri):
     {drift_image(uri, FW, FH, zoom=0.04, dur=52)}
     {clouds([(60, 210, 24, 0.20, 100, -20), (130, 260, 28, 0.18, 130, -70)])}
     <rect width="{FW}" height="{FH}" fill="url(#floor)"/>
-    {waves(236)}
+    {waves(204)}
     {particles(26, FW, 90, FH - 20, 21)}
-    <rect y="112" width="{FW}" height="76" fill="url(#band)" filter="url(#soft)"/>
-    <text x="{cx}" y="150" text-anchor="middle" {SANS} font-size="30" font-weight="300" letter-spacing="13" fill="#fff" filter="url(#shadow)">RIDE THE WAVE · BUILD THE SKY</text>
-    <text x="{cx}" y="186" text-anchor="middle" {MONO} font-size="14" letter-spacing="5" fill="#fff" filter="url(#shadow)">good night, good bye, and... good luck.</text>
+    <rect y="88" width="{FW}" height="76" fill="url(#band)" filter="url(#soft)"/>
+    <text x="{cx}" y="128" text-anchor="middle" {SANS} font-size="30" font-weight="300" letter-spacing="13" fill="#fff" filter="url(#shadow)">RIDE THE WAVE · BUILD THE SKY</text>
+    <text x="{cx}" y="162" text-anchor="middle" {MONO} font-size="14" letter-spacing="5" fill="#fff" filter="url(#shadow)">good night, good bye, and... good luck.</text>
   </g>
   <rect x="0.75" y="0.75" width="{FW - 1.5}" height="{FH - 1.5}" rx="15.5" fill="none" stroke="#fff" stroke-opacity="0.4"/>
   <!-- dock tab: the profile-visit counter sits directly beneath it -->
@@ -263,8 +263,8 @@ def main():
         (ASSETS / name).write_text(svg, encoding="utf-8")
         print(f"  {name:<14}{len(svg) / 1024:6.0f} KB")
 
-    write("banner.svg", banner(jpeg_uri(art, (1600, round(1600 * BH / BW)), top=20)))
-    write("footer.svg", footer(jpeg_uri(art, (1600, round(1600 * FH / FW)), top=330)))
+    write("banner.svg", banner(jpeg_uri(art, (1600, round(1600 * BH / BW)), top=30)))
+    write("footer.svg", footer(jpeg_uri(art, (1600, round(1600 * FH / FW)), top=380)))
     for stem, text in HEADINGS:
         write(f"h-{stem}.svg", heading(text))
     print("done.")
