@@ -1,13 +1,5 @@
 #!/usr/bin/env python3
-"""
-Rebuilds the README artwork from one image: assets/eureka.png
 
-    pip install pillow
-    python tools/build.py
-
-Writes assets/banner.svg, assets/footer.svg, assets/h-profile.svg, assets/h-stack.svg.
-The artwork is embedded inside each SVG because GitHub does not let an SVG load other files.
-"""
 import base64
 import html
 import io
@@ -28,7 +20,7 @@ TAB = 16  # footer dock: the visit counter sits right under this tab
 NAME_1, NAME_2 = "TUSHAR", "SINGH"
 ROLES = [
     "AI/ML ENGINEER",
-    "WEB DEV & DEVOPS ENGINEER",
+    "WEB & DEVOPS ENGINEER",
     "GAME DEVELOPER",
 ]
 ALT = "Tushar Singh - AI/ML Engineer, Web Dev & DevOps Engineer, Game Developer"
@@ -40,7 +32,6 @@ SANS = "font-family=\"'Helvetica Neue','Segoe UI',Arial,sans-serif\""
 MONO = "font-family=\"'Courier New',monospace\""
 
 
-# ------------------------------------------------------------------ image helpers
 def remove_title(img):
     """Paint out the 'Eureka Seven' lettering baked into the top-left sky."""
     box = (0, 0, 548, 215)
@@ -63,7 +54,6 @@ def jpeg_uri(img, size, top, quality=80):
     return "data:image/jpeg;base64," + base64.b64encode(buf.getvalue()).decode()
 
 
-# ------------------------------------------------------------------ svg helpers
 DEFS = """
     <filter id="soft" x="-30%" y="-150%" width="160%" height="400%"><feGaussianBlur stdDeviation="16"/></filter>
     <filter id="shadow" x="-10%" y="-30%" width="120%" height="170%">
@@ -168,7 +158,6 @@ def drift_image(uri, w, h, zoom=0.045, dur=46):
     )
 
 
-# ------------------------------------------------------------------ the artwork
 def banner(uri):
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {BW} {BH}" width="{BW}" height="{BH}" role="img" aria-label="{html.escape(ALT)}">
   <defs>{DEFS}
